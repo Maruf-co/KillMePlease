@@ -109,7 +109,12 @@ public class Simulator {
             }
 
             output = worldBuilder.plotWorld();
-
+            for (int j = 0; j < 10; j++) {
+                for (int k = 0; k < 10; k++) {
+                    System.out.print(output.charAt(j * 10 + k));
+                }
+                System.out.println();
+            }
 
         }
     }

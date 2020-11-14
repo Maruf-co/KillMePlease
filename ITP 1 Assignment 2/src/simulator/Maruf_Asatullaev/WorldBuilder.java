@@ -26,6 +26,7 @@ public class WorldBuilder extends WorldController{
     @Override
     public void symbolsMove(List<Symbol> symbols) {
         for (Symbol symbol : symbols) {
+            if(symbol instanceof SymbolCapitalP)
                 symbol.move();
         }
     }
@@ -48,14 +49,42 @@ public class WorldBuilder extends WorldController{
         for (Symbol symbol : symbols) {
             if (existS && !existR && (symbol instanceof SymbolCapitalP || symbol instanceof SymbolSmallP) ||
                     existR && !existP && (symbol instanceof SymbolCapitalS || symbol instanceof SymbolSmallS) ||
-                    existP && (!(symbol instanceof SymbolCapitalP) || !(symbol instanceof SymbolSmallP)) ||
+                    existP && !(symbol instanceof SymbolCapitalP) && !(symbol instanceof SymbolSmallP) ||
                     symbol.getNumberIterationsAlive() > 30) {
                 symbol.die();
                 symbols.remove(symbol);
             }
         }
+        symbolPairs(symbols, existP, existR, existS);
 
-
+    }
+    public void symbolPairs(List<Symbol> symbols, boolean existP, boolean existR, boolean existS){
+        boolean capitalSymbol = false;
+        boolean smallSymbol = false;
+        for(Symbol symbol : symbols){
+            if(symbol instanceof CapitalCase){
+                capitalSymbol = true;
+            }else{
+                smallSymbol = true;
+            }
+        }
+        if(!(capitalSymbol && smallSymbol)){
+            Position tmpPosition = null;
+            if(symbols.get(0).getPosition().row == 0){
+                tmpPosition = new Position(1, symbols.get(0).getPosition().column);
+            }else{
+                tmpPosition = new Position(symbols.get(0).getPosition().row-1, symbols.get(0).getPosition().column);
+            }
+            Symbol tmpSymbol = null;
+            if(existP){
+                tmpSymbol = new SymbolSmallP(Simulator.id++, tmpPosition);
+            }else if(existR){
+                tmpSymbol = new SymbolSmallR(Simulator.id++, tmpPosition);
+            }else if(existS){
+                tmpSymbol = new SymbolSmallS(Simulator.id++, tmpPosition);
+            }
+            this.addSymbol(tmpSymbol);
+        }
     }
 
     @Override
@@ -65,6 +94,7 @@ public class WorldBuilder extends WorldController{
             tmpSymbol = (Symbol) symbol;
             if(tmpSymbol.getNumberIterationsAlive() == 20){
                 symbol.upgrade();
+                symbols.remove(symbol);
             }
 
         }
@@ -110,31 +140,24 @@ public class WorldBuilder extends WorldController{
         for (int i = 0; i < 100; i++) {
             tmpPosition = new Position(i / 10,i % 10);
             if (WorldController.world.containsKey(tmpPosition)) {
-                if (WorldController.world.get(tmpPosition).get(0) instanceof SymbolCapitalP) {
-                    worldWord.append(CAPITAL_P);
-                } else if (WorldController.world.get(tmpPosition).get(0) instanceof SymbolCapitalR) {
-                    worldWord.append(CAPITAL_R);
-                } else if (WorldController.world.get(tmpPosition).get(0) instanceof SymbolCapitalS) {
-                    worldWord.append(CAPITAL_S);
-                } else if (WorldController.world.get(tmpPosition).get(0) instanceof SymbolSmallP) {
-                    worldWord.append(SMALL_P);
-                } else if (WorldController.world.get(tmpPosition).get(0) instanceof SymbolSmallR) {
-                    worldWord.append(SMALL_R);
-                } else if (WorldController.world.get(tmpPosition).get(0) instanceof SymbolSmallS) {
-                    worldWord.append(SMALL_S);
+                Symbol tmp = WorldController.world.get(tmpPosition).get(0);
+                if (tmp instanceof SymbolCapitalP) {
+                    worldWord.append(WorldController.CAPITAL_P);
+                } else if (tmp instanceof SymbolCapitalR) {
+                    worldWord.append(WorldController.CAPITAL_R);
+                } else if (tmp instanceof SymbolCapitalS) {
+                    worldWord.append(WorldController.CAPITAL_S);
+                } else if (tmp instanceof SymbolSmallP) {
+                    worldWord.append(WorldController.SMALL_P);
+                } else if (tmp instanceof SymbolSmallR) {
+                    worldWord.append(WorldController.SMALL_R);
+                } else if (tmp instanceof SymbolSmallS) {
+                    worldWord.append(WorldController.SMALL_S);
                 }
             } else {
-                worldWord.append("ф");
+                worldWord.append(" ");
             }
-        }
-
-        for (int j = 0; j < 10; j++) {
-            for (int k = 0; k < 10; k++) {
-                System.out.print(worldWord.charAt(j * 10 + k));
-            }
-            System.out.println();
         }
         return worldWord.toString();
-
     }
 }
