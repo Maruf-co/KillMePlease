@@ -29,7 +29,7 @@ public class SymbolSmallP extends Symbol implements Aggressive, SmallCase {
 
     @Override
     public void die() {
-
+        System.out.println("I am 'p' and I have dead");
     }
 
     @Override

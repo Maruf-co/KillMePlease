@@ -1,0 +1,23 @@
+
+g
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 63 to the 15 allowed.(µ˜³7
+U	java:S106|"9Replace this use of System.out or System.err by a logger.(×•œ²8Â¯šÁÜ.
+X	java:S125]"<This block of commented-out lines of code should be removed.(œ¢Åí8ýÅïÀÜ.
+R
+java:S3972;"7Move this "if" to a new line or add the missing "else".(ÒŠ×þÿÿÿÿ
+Z	java:S106u"9Replace this use of System.out or System.err by a logger.(ªÓ¼áþÿÿÿÿ8êê˜ÁÜ.
+[	java:S106„"9Replace this use of System.out or System.err by a logger.(ªÓ¼áþÿÿÿÿ8¡¾—ÁÜ.
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(­”™ùÿÿÿÿ
+R
+java:S39729"7Move this "if" to a new line or add the missing "else".(ÒŠ×þÿÿÿÿ
+p
+java:S1450"URemove the "output" field and declare it as a local variable in the relevant methods.(ñäÃîøÿÿÿÿ
+C
+java:S1444"(Make this "public static id" field final(¨±Çôûÿÿÿÿ
+i
+java:S1104"NMake id a static final constant or non-public and provide accessors if needed.(¨±Çôûÿÿÿÿ
+U	java:S106s"9Replace this use of System.out or System.err by a logger.(»€’À8ÜùÁÜ.
+S	java:S106{"9Replace this use of System.out or System.err by a logger.(¸ë™Éøÿÿÿÿ
+V	java:S106‚"9Replace this use of System.out or System.err by a logger.(»€’À8Ã±‡ÁÜ.
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ªÓ¼áþÿÿÿÿ
+U	java:S106y"9Replace this use of System.out or System.err by a logger.(»€’À8â†…ÁÜ.

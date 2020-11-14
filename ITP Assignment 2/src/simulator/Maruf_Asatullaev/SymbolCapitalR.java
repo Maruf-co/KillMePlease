@@ -29,7 +29,7 @@ public class SymbolCapitalR extends Symbol implements Aggressive, CapitalCase {
 
     @Override
     public void die() {
-
+        System.out.println("I am 'R' and I have dead");
     }
 
     @Override

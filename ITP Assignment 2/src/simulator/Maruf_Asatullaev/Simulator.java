@@ -43,7 +43,7 @@ public class Simulator {
         worldBuilder.addSymbol(smallS);
 
 
-        for (int i = 1; i <= 1; i++) {
+        for (int i = 1; i <= 2; i++) {
             tmpSymbols.clear();
             tmpCapitalCaseSymbols.clear();
             tmpSmallCaseSymbols.clear();
@@ -90,9 +90,9 @@ public class Simulator {
                     tmpAggressiveSymbols.add((Aggressive) symbol);
                 }
             }
-            worldBuilder.passiveEscape(tmpPassiveSymbols);
-            worldBuilder.passiveBreed(tmpPassiveSymbols);
-            worldBuilder.aggressiveAttackSmart(tmpAggressiveSymbols);
+//            worldBuilder.passiveEscape(tmpPassiveSymbols);
+//            worldBuilder.passiveBreed(tmpPassiveSymbols);
+//            worldBuilder.aggressiveAttackSmart(tmpAggressiveSymbols);
 
             tmpSymbols.clear();
             for(Passive symbol : tmpPassiveSymbols){
@@ -110,10 +110,27 @@ public class Simulator {
 
             output = worldBuilder.plotWorld();
             for (int j = 0; j < 10; j++) {
-                for (int k = 0; k < 10; k++) {
-                    System.out.print(output.charAt(j * 10 + k));
+                if(j==0){
+                    for (int k = 0; k < 12; k++) {
+                        System.out.print("# ");
+                    }
+                    System.out.println();
+                }
+                for (int k = 0; k < 12; k++) {
+                    if(k == 0 || k == 11){
+                        System.out.print("# ");
+                    }else{
+                        System.out.print(output.charAt(j * 10 + k-1));
+                        System.out.print(" ");
+                    }
                 }
                 System.out.println();
+                if(j==9){
+                    for (int k = 0; k < 12; k++) {
+                        System.out.print("# ");
+                    }
+                    System.out.println();
+                }
             }
 
         }

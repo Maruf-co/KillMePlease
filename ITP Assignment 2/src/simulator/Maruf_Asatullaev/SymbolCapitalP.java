@@ -29,7 +29,7 @@ public class SymbolCapitalP extends Symbol implements Passive, CapitalCase {
 
     @Override
     public void die() {
-
+        System.out.println("I am 'P' and I have dead");
     }
 
     @Override
