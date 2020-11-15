@@ -1,16 +1,9 @@
 
-9
-java:S2119%"Save and re-use this "Random".(šŸ«íøÿÿÿÿ
-9
-java:S2119"Save and re-use this "Random".(šŸ«íøÿÿÿÿ
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(­”™ùÿÿÿÿ
-s	java:S135."YReduce the total number of break and continue statements in this loop to use at most one.(Î™Ìıÿÿÿÿ
-U	java:S106 "9Replace this use of System.out or System.err by a logger.(é¿•ü8‚™êÀÜ.
-k
-java:S21750"NA "HashMap<Position, LinkedList>" cannot contain a "int" in a "Position" type.(‹”ö±8‚™êÀÜ.
-p
-java:S21751"NA "HashMap<Position, LinkedList>" cannot contain a "int" in a "Position" type.(»ÂÚµıÿÿÿÿ8‚™êÀÜ.
-k
-java:S21756"NA "HashMap<Position, LinkedList>" cannot contain a "int" in a "Position" type.(¢ˆ†Ó8‚™êÀÜ.
-k
-java:S21757"NA "HashMap<Position, LinkedList>" cannot contain a "int" in a "Position" type.(ÄÈ•”8‚™êÀÜ.
+t	java:S120
+"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(­”™ùÿÿÿÿ
+z	java:S135K"YReduce the total number of break and continue statements in this loop to use at most one.(Î™Ìıÿÿÿÿ8úŒçÜ.
+Z	java:S1066"9Replace this use of System.out or System.err by a logger.(»‹›ÿÿÿÿÿ8ÚìêßÜ.
+:
+java:S2119?"Save and re-use this "Random".(¦ÙÁ8ÁÁ‰çÜ.
+3
+java:S2119$"Save and re-use this "Random".(¦ÙÁ

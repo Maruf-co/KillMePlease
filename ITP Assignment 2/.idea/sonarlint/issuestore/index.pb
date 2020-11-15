@@ -17,3 +17,11 @@ b
 0src/simulator/Maruf_Asatullaev/WorldBuilder.java,a\d\adc4c4b2d1dc0e50d9d553c86f874c7346da0ca1
 ]
 -src/simulator/Maruf_Asatullaev/Simulator.java,1\c\1c0575249cbaacdb5489ad2858fac5fe3175d198
+Y
+)src/simulator/do_not_change/Position.java,e\4\e4daba8f29895570949d79a9463f922851990526
+`
+0src/simulator/do_not_change/WorldController.java,e\8\e8f63f6b70cf690e0efdd9358a233622d3d555d0
+X
+(src/simulator/do_not_change/Passive.java,b\d\bd1f50794d9d80f4b71c7cc4f93c87af8624c975
+[
++src/simulator/do_not_change/Aggressive.java,7\c\7cc855f29a7e322b9fd6973d73d2bb5e27f61b03

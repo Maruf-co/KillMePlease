@@ -1,10 +1,13 @@
 
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(­”™ùÿÿÿÿ
-h
-java:S3776#"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(“–Ùä
-L
-java:S2696P"6Make the enclosing method "static" or remove this set.(èÆÒ
-L
-java:S2696R"6Make the enclosing method "static" or remove this set.(·–¾¤
-Q
-java:S2696T"6Make the enclosing method "static" or remove this set.(³¢¬åøÿÿÿÿ
+S
+java:S2696}"6Make the enclosing method "static" or remove this set.(èÆÒ8®µ«äÜ.
+t	java:S120
+"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(­”™ùÿÿÿÿ
+Y
+java:S2696"6Make the enclosing method "static" or remove this set.(³¢¬åøÿÿÿÿ8®µ«äÜ.
+o
+java:S3776="RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(“–Ùä8¢Ô©äÜ.
+S
+java:S2696"6Make the enclosing method "static" or remove this set.(·–¾¤8®µ«äÜ.
+n
+java:S3776Z"RRefactor this method to reduce its Cognitive Complexity from 26 to the 15 allowed.(í¾¹t8®µ«äÜ.

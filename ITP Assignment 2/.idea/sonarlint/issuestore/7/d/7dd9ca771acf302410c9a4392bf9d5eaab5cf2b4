@@ -1,17 +1,8 @@
 
-i
-java:S2175'"NA "HashMap<Position, LinkedList>" cannot contain a "int" in a "Position" type.(Õÿÿÿÿÿÿ
-s	java:S135%"YReduce the total number of break and continue statements in this loop to use at most one.(Î™Ìıÿÿÿÿ
-9
-java:S2119"Save and re-use this "Random".(šŸ«íøÿÿÿÿ
-d
-java:S21758"NA "HashMap<Position, LinkedList>" cannot contain a "int" in a "Position" type.(ÛÄâä
-d
-java:S2175="NA "HashMap<Position, LinkedList>" cannot contain a "int" in a "Position" type.(ÎØ¿Ç
-s	java:S1356"YReduce the total number of break and continue statements in this loop to use at most one.(Î™Ìıÿÿÿÿ
-Z	java:S106 "9Replace this use of System.out or System.err by a logger.(¾°åğûÿÿÿÿ8ÉÈëÀÜ.
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(­”™ùÿÿÿÿ
-i
-java:S2175,"NA "HashMap<Position, LinkedList>" cannot contain a "int" in a "Position" type.(Ô±Œ¿üÿÿÿÿ
-L
-java:S2696F"6Make the enclosing method "static" or remove this set.(¶äšÖ
+z	java:S135g"YReduce the total number of break and continue statements in this loop to use at most one.(Î™Ìıÿÿÿÿ8°‰½çÜ.
+:
+java:S2119$"Save and re-use this "Random".(¦ÙÁ8©¸çÜ.
+U	java:S1066"9Replace this use of System.out or System.err by a logger.(ş­é³8‹İ¹çÜ.
+t	java:S120
+"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(­”™ùÿÿÿÿ
+z	java:S135K"YReduce the total number of break and continue statements in this loop to use at most one.(¬¾¤Ğşÿÿÿÿ8©…¼çÜ.
