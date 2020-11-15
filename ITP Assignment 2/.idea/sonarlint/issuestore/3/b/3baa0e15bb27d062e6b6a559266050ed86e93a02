@@ -1,0 +1,17 @@
+
+9
+java:S2119"Save and re-use this "Random".(šŸ«íøÿÿÿÿ
+i
+java:S2175-"NA "HashMap<Position, LinkedList>" cannot contain a "int" in a "Position" type.(Õÿÿÿÿÿÿ
+i
+java:S21752"NA "HashMap<Position, LinkedList>" cannot contain a "int" in a "Position" type.(Ô±Œ¿üÿÿÿÿ
+d
+java:S2175="NA "HashMap<Position, LinkedList>" cannot contain a "int" in a "Position" type.(ÛÄâä
+d
+java:S2175B"NA "HashMap<Position, LinkedList>" cannot contain a "int" in a "Position" type.(ÎØ¿Ç
+L
+java:S2696%"6Make the enclosing method "static" or remove this set.(î ¦
+s	java:S135+"YReduce the total number of break and continue statements in this loop to use at most one.(Î™Ìıÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(­”™ùÿÿÿÿ
+U	java:S106 "9Replace this use of System.out or System.err by a logger.(Ô¿ĞÌ8âˆëÀÜ.
+s	java:S135;"YReduce the total number of break and continue statements in this loop to use at most one.(Î™Ìıÿÿÿÿ
